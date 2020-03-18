@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GUI.FormBackup" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIQACBKEAgBEAAIKAQAAGAAAAABAACKAAAIBkgBA=</HashCode>
+      <FileName>FormBackup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormConfigurar" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgACCAgBEAAISAAAACAhAAAEIEAIAAAABAAAA=</HashCode>
+      <FileName>FormConfigurar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormCriarBanco" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgACCAABEAAISAABACABAAAEAEAKAQQAAAAAA=</HashCode>
+      <FileName>FormCriarBanco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormMenu" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ERiiRCiAJiBBqARERwSHczCGUtw4kASgnGiMggEAVDI=</HashCode>
+      <FileName>FormMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.FormSobre" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormSobre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmAtribTrocaMesaComputador" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAQAACAAgAiAAAAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>frmAtribTrocaMesaComputador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmAtribTrocaMesaMonitor" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAABAIAACAAgAiAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>frmAtribTrocaMesaMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmAtribTrocaMesaUsuario" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAgQiBAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>frmAtribTrocaMesaUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmCadastroComputador" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAABgggQiSBAgBAAAYCAgJACQhRAAAAYEQQRUAAoCAA=</HashCode>
+      <FileName>frmCadastroComputador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmCadastroMesa" Collapsed="true">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABggoQgCAAgBEgAICAgBBCAhRAAAAQAQQQUAAICAI=</HashCode>
+      <FileName>frmCadastroMesa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmCadastroMonitor" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABIggQhWAAgBEAAICAgBBDQhZgAAAQAQQRUAAICAI=</HashCode>
+      <FileName>frmCadastroMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmCadastroUsuario" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAYBIgkQEiAAgHECBIDIoBBCAgRAAIAQAQQQAABIAEA=</HashCode>
+      <FileName>frmCadastroUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmConsultaComputador" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>frmConsultaComputador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmConsultaMesa" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>frmConsultaMesa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmConsultaMonitor" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>frmConsultaMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmConsultaUsuario" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>frmConsultaUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmModeloDeFormularioDeCadastro" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACgAAAEAAACEAAACAAAGAAQAAAAIAAFAAAA=</HashCode>
+      <FileName>frmModeloDeFormularioDeCadastro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.frmModeloDeFormularioDeConsulta" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABCAAAAAAAACAAAACAAQAAAQIAAAAAAAAAAA=</HashCode>
+      <FileName>frmModeloDeFormularioDeConsulta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Program" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Resources" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAAoAgAAAAQAAACBEAAAAQwIgIAAAAAUByIAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI.Properties.Settings" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAIAAAAAABAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57D10C97-5C93-4F8C-A7E2-3C188B82A0B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reino_da_Garotada</RootNamespace>
+    <AssemblyName>Reino da Garotada</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="banco_reinoDataSet.cs">
+      <DependentUpon>banco_reinoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="banco_reinoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>banco_reinoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="banco_reinoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>banco_reinoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Classedall.cs" />
+    <Compile Include="Connected Services\Wscorreios_\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarAluno.Designer.cs">
+      <DependentUpon>FormCadastrarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarCurso.Designer.cs">
+      <DependentUpon>FormCadastrarCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarFuncionario.Designer.cs">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarTurma.Designer.cs">
+      <DependentUpon>FormCadastrarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarFuncionario.Designer.cs">
+      <DependentUpon>FormAlterarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarAluno.Designer.cs">
+      <DependentUpon>FormAlterarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesquisarTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesquisarTurma.Designer.cs">
+      <DependentUpon>FormPesquisarTurma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="get_set.cs" />
+    <Compile Include="PesquisaAvancada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisaAvancada.Designer.cs">
+      <DependentUpon>PesquisaAvancada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastrarAluno.resx">
+      <DependentUpon>FormCadastrarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarCurso.resx">
+      <DependentUpon>FormCadastrarCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarFuncionario.resx">
+      <DependentUpon>FormCadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarTurma.resx">
+      <DependentUpon>FormCadastrarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarFuncionario.resx">
+      <DependentUpon>FormAlterarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarAluno.resx">
+      <DependentUpon>FormAlterarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesquisarTurma.resx">
+      <DependentUpon>FormPesquisarTurma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisaAvancada.resx">
+      <DependentUpon>PesquisaAvancada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="banco_reinoDataSet.xsc">
+      <DependentUpon>banco_reinoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banco_reinoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>banco_reinoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="banco_reinoDataSet.xss">
+      <DependentUpon>banco_reinoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banco_reinoDataSet1.xsc">
+      <DependentUpon>banco_reinoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="banco_reinoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>banco_reinoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="banco_reinoDataSet1.xss">
+      <DependentUpon>banco_reinoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\AtendeClienteService.wsdl" />
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.clienteERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.contratoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.embalagemLRSMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.enderecoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.retornoCancelamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.servicoAdicionalXML.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.servicoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.statusCartao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.statusPlp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Wscorreios_\Reino_da_Garotada.Wscorreios_.valePostal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\reino_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_cadastrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_relatorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_ferramentas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\background_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_aluno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_aluno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curso2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_Funcionario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_Funcionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_aluno2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curso4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqNome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqIdentidade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqMatricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_relatficha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_relat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_relatAluno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_relatorio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_ativos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_inativos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_Funcionario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqnome1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqCurso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesqFuncionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_fichaAluno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_Funcionario3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_curso5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\reino_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_confirma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo_usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\logo_senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_entrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_limpar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesquisarNome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_setaDireita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_setaEsquerda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icon_pesquisar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Wscorreios_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Wscorreios_\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Wscorreios_\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Wscorreios_\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DAL.CADComputador" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAIAAAAAAAEAAAABAABAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>CADComputador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.CADConexao" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAEAAABAEAAAAAAAAAADAAAA=</HashCode>
+      <FileName>CADConexao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.CADMesa" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAABAABAAAAAAAAAAAABAAIAAA=</HashCode>
+      <FileName>CADMesa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.CADMonitor" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CADMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.CADUsuario" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CADUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAL.DadosDaConexao" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DadosDaConexao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

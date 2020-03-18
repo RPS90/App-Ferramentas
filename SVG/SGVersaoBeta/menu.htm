@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="icon" href="homeicon.png">
+	<meta charset="utf-8">
+	<meta name="author" content="Mike Ewerthon de Figueiredo Silva" />
+	<link rel="stylesheet" href="css/libs/animate.css">
+  	<link rel="stylesheet" href="css/site.css">
+	<script src="js/script.js"></script>
+   <script src="js/jquery-1.5.2.min.js"></script>
+   <style>.wow:first-child {visibility: hidden;}.botao-sair-login{margin-left: 45%;width: 110px;height: 28px;text-align: center;color: #ffffff;background-color: #4458a4;margin-top: 2%;font-size: 20px;float: none;border-radius: 8px;cursor: pointer;}</style>
+   <script>
+       function Deslogar() {
+           location.href = "deslogar.aspx";
+       }
+    
+   </script>
+</head>
+<body>
+        <input id="btnDeslogar" class="botao-sair-login" type="button" value="Deslogar" onclick="Deslogar();"/>
+        <br />
+        <!-- Menu do projeto -->
+			<div class="container-menu">
+				<a href="index.aspx"><img src="img/logotipo-articulando-comunicacao.jpg" id="logotipo-topo"  class="wow swing" data-wow-delay="0.4s"></a> <!-- Logotipo do topo -->
+				<center>
+					<input type="checkbox" id="bt_menu">
+					<label for="bt_menu">&#9776;</label>
+					<div class="clearfix"></div>
+					<nav  class="menu">
+						<ul>
+							<li><a href="index.aspx">Home</a></li>
+							<li><a href="painelClientes.aspx">Clientes</a></li>
+							<li><a href="gerenciarEquipe.aspx">Equipe</a></li>
+							<li><a href="painelProjetos.aspx">Projetos</a></li>
+                            <li><a href="facaSuaSugestao.aspx">Sugestão</a></li>
+						</ul>
+					</nav>
+				</center>
+			</div>
+		<!-- Fim do Menu do Projeto -->
+        <script src="dist/wow.js"></script>		
+	    <script>
+	        wow = new WOW(
+		    {
+		        animateClass: 'animated',
+		        offset: 100,
+		        callback: function (box) {
+		            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+		        }
+		    }
+		    );
+	        wow.init();
+	        document.getElementById('moar').onclick = function () {
+	            var section = document.createElement('section');
+	            section.className = 'section--purple wow fadeInDown';
+	            this.parentNode.insertBefore(section, this);
+	        };
+	    </script>
+</body>
+</html>

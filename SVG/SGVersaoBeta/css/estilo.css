@@ -1,0 +1,112 @@
+*{margin:0;padding:0;}
+.clearfix{clear: both;}
+@font-face{font-family: 'BebasNeue-Regular';src: url('font/BebasNeue-Regular.ttf');src: local('BebasNeue-Regular'), url('font/BebasNeue-Regular.ttf') format('truetype');}
+@font-face{font-family: 'FjallaOne-Regular';src: url('font/FjallaOne-Regular.ttf');src: local('FjallaOne-Regular'), url('font/FjallaOne-Regular.ttf') format('truetype');}
+@font-face{font-family: 'palanquin.regular';src: url('font/palanquin.regular.ttf');src: local('palanquin.regular'), url('font/palanquin.regular.ttf') format('truetype');}
+/*################################ MENU #############################*/
+#logotipo-topo{width: 5%;float: left;margin-left: 5%;margin-top: 1%;cursor: pointer;}
+#logotipo-fatec-topo{width: 12%;float: left;margin-left: 8%;margin-top: 2.4%;cursor: pointer;}
+.container-menu{width: 100%;height: 20px;background-color: rgba(255,255,255,.4);position: relative;z-index: 5;}
+.clearfix{clear: both;}
+.menu{width: 100%;height: 20px;font-family: 'BebasNeue-Regular'; margin-top: -4.4%;}
+.menu ul{list-style: none;position: relative;float: right;}
+.menu ul li{width: 130px;float: left;font-weight: bold;}
+.menu a{color: #8a8a87;padding: 15px;padding-top: 0px;display: block;text-decoration: none;text-align: center;}
+.menu ul ul{position: absolute;visibility: hidden; border: 1px #636363 solid;}
+.menu ul ul li{width: 180px;font-size: 16px;text-align: left;}
+.menu ul ul li a{padding-top: 5px;text-align: left;}
+.menu ul li:hover ul{visibility: visible;}
+.menu a:hover{background-color: #ffffff;color: #eabe1d;}
+.menu ul ul li{float: none; border-bottom: solid 1px #b2b2b2;}
+.menu ul ul li a{background-color: #ffffff;}
+label[for="bt_menu"]{ padding: 5px; background-color: #FFFFFF; color: #b2b2b2; font-family: 'BebasNeue-Regular'; text-align: center; font-size: 30px; cursor: pointer; width: 50px; height: 50px;}
+#bt_menu{display: none;}
+label[for="bt_menu"]{display: none;}
+@media(max-width: 1420px){ 
+	.menu ul li{ width: 110px; float: left; font-weight: bold; font-size: 22px; } 
+}
+@media(max-width: 1000px){ 
+	.logotipo-topo{ width: 20%; float: none; margin-left: 0%; margin-top: 5.1%;}	
+	label[for="bt_menu"]{ display: block; float: right;}	
+	#bt_menu:checked ~ .menu{ margin-left: 0;}	
+	#bt_menu:checked ~ .menu ul {background-color: #fff;}	
+	.menu{ margin-top: 5px; margin-left: -250%; transition: all .4s;}	
+	.menu ul{ float: none; }
+	.menu ul li{ width: 100%; float: none; }		
+	.menu ul ul{ position: static; overflow: hidden; max-height: 0; transition: all .4s; }		
+	.menu ul li:hover ul{ height: auto; width:100%; max-height: 500px;}
+	.menu ul ul li{ float: none; border-bottom: none; }
+}
+@media(max-width: 900px){
+	.logotipo-topo{ width: 25%; float: none; margin-left: 0%; margin-top: -6.4%; }
+}
+@media(max-width: 750px){
+	.logotipo-topo{ width: 31%; float: none; margin-left: 0%; margin-top: -7.9%; }
+}
+@media(max-width: 600px){
+	.logotipo-topo{ width: 42%; float: left; margin-left: 3%; margin-top: -11%; }
+}
+@media(max-width: 430px){
+	.logotipo-topo{ width: 53%; float: left; margin-left: 3%; margin-top: -13%; }
+}
+/*################################ FIM DO MENU #############################*/
+/*################################### Home ##################################*/
+.blocos-icones-home{width: 20%;float: left;margin-left: 9.7%;margin-top: 4%;padding-bottom: 4%;}
+#icones-home{width: 60%;cursor: pointer;}
+#icones-home:hover{transition: 180ms linear;transform: scale(0.9);}
+.titulo-icones-home{text-align: center; font-size: 26px;margin-top: 2%;color: #8a8a87;font-family: 'palanquin.regular';}
+.titulo-icones-home-quatro{text-align: center; font-size: 22px;margin-top: 2%;color: #8a8a87;font-family: 'palanquin.regular';}
+#blocos-finais-home{border-radius:6px;width: 42%;float: left;margin-left: 5%;margin-top: 4%;border: 1px #8a8a87 solid;box-shadow: 0px 2px 16px 4px #b1b1ac;min-height: 230px;}
+.titulo-blocos-finais-home{text-align: left;margin-left: 3%;font-size: 24px;font-weight: bold;padding-bottom: 2%;font-family: 'palanquin.regular';color: #eabe1d;}
+.texto-blocos-finais-home{font-size: 16px;line-height: 29px;font-family: 'palanquin.regular';color: #8a8a87;text-align: justify; text-indent: 15px;}
+.select-form-home{width: 90%;height: 40px;text-align: center;font-size: 19px;font-family: 'palanquin.regular';color: #8a8a87;margin-top: 2%;margin-left: 4%;}
+.botao-form-home{width: 130px;height: 35px;text-align: center;color: #ffffff;background-color: #4458a4;margin-top: 3%;font-size: 20px;float: right;margin-right: 6%;border-radius: 8px;cursor: pointer;}
+.botao-form-home:hover{transition: 180ms linear;color: #ffffff;background-color: #eabe1d;}
+@media (max-width: 1000px){
+	.titulo-icones-home{text-align: center; font-size: 18px;margin-top: 2%;color: #8a8a87;font-family: 'palanquin.regular';}
+}
+/*################################### Fim da Home ############################*/
+/*################################### Rodapé ############################*/
+.imagem-fundo-rodape{margin-top: 4%;width: 100%;position: relative;z-index: 1;}
+#logotipo-rodape{cursor:pointer;width: 50%;margin-top: -27%;position: relative;z-index: 2;float: none;}
+#logotipo-rodape:hover{transition: 180ms linear; transform: scale(0.9);}
+.bloco-form-rodape{width: 40%;float: right;margin-right: 3%;margin-top: -27%;position: relative;z-index: 2;}
+.titulo-form-rodape{font-weight: bold;font-size: 22px;color: #ffffff;font-family: 'palanquin.regular';padding-bottom: 2%;text-align: center;}
+.input-rodape{width: 100%;height: 35px;font-size: 19px;color: #622d87;font-family: 'palanquin.regular';margin-top: 2%;background: none;}
+.botao-form-rodape{width: 100px;height: 45px;color: #ffffff;background-color: #4458a4;cursor:pointer;border-radius: 6px;font-family: 'palanquin.regular'; margin-top: 3%;font-size: 18px;}
+.botao-form-rodape:hover{transition: 180ms linear;color: #ffffff;background-color: #eabe1d;}
+::-webkit-input-placeholder{color:#000;text-align: center;font-size:19px;font-family: 'palanquin.regular';border: 1px #ffffff solid;}
+@media (max-width: 1100px){
+	.container-rodape{width: 100%; padding-bottom: 6%; height: auto;margin-top: 4%;position: relative;z-index: 3;background-image: url('../img/fundo-rodape.png');background-repeat: repeat-y;}
+	.imagem-fundo-rodape{display: none;}
+	#logotipo-rodape{width: 50%;margin-top: 11%;position: relative;z-index: 2;float: none;}
+	.bloco-form-rodape{width: 40%;float: right;margin-right: 3%;margin-top: 4%;position: relative;z-index: 2;}
+}
+/*################################### Fim do Rodapé ############################*/
+/*############################# Outras páginas #################################*/
+#banner-login{float: left;width: 30%;margin-top: 0%;}
+#logotipo-fatec-interno{float: right; margin-right: 4%; width: 15%; margin-top: 3%;}
+.container-login{float:right;border-radius:6px;width: 40%;margin-left: 10%;margin-top: 19%;border: 1px #8a8a87 solid;box-shadow: 0px 2px 16px 4px #b1b1ac;min-height: 440px;}
+#logotipo-artc-login{width: 20%;margin-top: 2%; padding-bottom: 2%;cursor: pointer;}
+#logotipo-artc-login:hover{transition: 180ms linear; transform: scale(0.9);}
+.input-login{font-family: 'palanquin.regular';margin-top: 3%;width: 70%;height: 35px; border-top: none; border-right: none; border-left: none; border-bottom: 2px #8a8a87 solid; color: #000;}
+.banner-interno{width: 100%; margin-top: 1.5%; padding-bottom: 3%;}
+.blocos-icones-duplos{width: 30%;float: left;margin-left: 13.5%;margin-top: 4%;padding-bottom: 4%;}
+.blocos-icones-quatro{width: 22%;float: left;margin-left: 2.5%;margin-top: 4%;padding-bottom: 4%;}
+.container-formularios{width: 75%; min-height: 300px; border-radius: 8px; border: 1px #8a8a87 solid; box-shadow: 1px 2px 23px 2px #8a8a87;}
+.titulos-paginas-internas{font-style: oblique;padding-bottom: 2%;text-align: center;margin-top: 2%;font-family: 'palanquin.regular';font-size: 27px; color: #eabe1d;}
+#topico-formulario{text-align: center; margin-top: 2%; font-size: 28px; font-weight: bold;color: #eabe1d; padding-bottom: 2%;font-family: 'palanquin.regular';}
+.nome-input-formularios{font-weight: bold;text-align: left; float: left;padding-right: 2%; margin-left: 2%; margin-top: 2%;font-family: 'palanquin.regular';font-size: 18px; color: #eabe1d;}
+.input-formularios{color: #000; font-size:16px;font-family: 'palanquin.regular';text-align: left;margin-top: 2%; width: 90%; height: 35px; border-radius: 8px; border: 1px #8a8a87 solid;box-shadow: 0px 1px 17px 1px #b1b1ac; }
+.linha-divisoria-conteudo{width: 90%; margin-top: 4%;  color: #eabe1d;background-color: #eabe1d;height: 3px;}
+.bloco-grande-form{width: 80%;margin-top: 2%;padding-bottom: 2%;}
+.bloco-medio-form{width: 48%;float: left;margin-left: 2%;}
+::-webkit-input-placeholder{color:#000;font-size: 16px;font-family: 'palanquin.regular';}
+.lblInformacoesProjetos{font-weight: bold;text-align: left;font-family: 'palanquin.regular';font-size: 17px; color: #000;}
+
+@media (max-width: 1100px){
+	.blocos-icones-quatro{width: 47%;float: left;margin-left: 2.5%;margin-top: 4%;padding-bottom: 4%;}
+	.titulos-paginas-internas{text-align: center;margin-top: 2%;padding-bottom: 2%;font-family: 'palanquin.regular';font-size: 22px; color: #eabe1d;}
+	.container-login{float:right;border-radius:6px;width: 40%;margin-left: 5%;margin-top: 14%;border: 1px #8a8a87 solid;box-shadow: 0px 2px 16px 4px #b1b1ac;min-height: 340px;}
+}
+/*############################# Fim de Outras páginas #################################*/

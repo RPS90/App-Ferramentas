@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs"
+    Inherits="LojaVirtual.WEB.Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!--veio láá do layout q eu baixei-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GreatFantasy</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" /> 
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="background">
+        <div id="page">
+            <div id="header">
+                <span id="connect"><a href="http://facebook.com/freewebsitetemplates" target="_blank"
+                    class="facebook"></a><a href="http://twitter.com/fwtemplates" target="_blank" class="twitter">
+                    </a>
+                </span><span id="infos">
+                Carrinho:<asp:Label ID="lblItens" runat="server" Text="000"></asp:Label><br/>
+                Total:   <asp:Label ID="lblValor" runat="server" Text="123"></asp:Label><br/>
+                <asp:HyperLink ID="VerCarrinho" runat="server" Text ="Ver Carrinho" 
+                    NavigateUrl="../CarrinhoCompra.aspx" Font-Bold="True"/>
+
+                <asp:HyperLink ID="lnkEntrar" runat="server" Text ="Login" 
+                    NavigateUrl="/Autenticar.aspx" Font-Bold="True"/>
+               
+                </span>
+                <a href="../CarrinhoCompra.aspx" id="logo">
+                <asp:Label ID="lblCliente" runat="server" Font-Size="XX-Large"></asp:Label>
+                </a>
+                <!-- /#logo -->
+                <ul id="navigation">
+                    <li class="selected"><a href="../inicio.aspx">Início</a></li>
+                    <li><a href="../sobre.aspx">Sobre a Loja</a></li>
+                    <li><a href="../Default.aspx">Comprar</a></li>                      
+                    <li><a href="../contato.aspx">Contato</a></li>
+           
+                </ul>
+                
+            </div>
+            <!-- /#header -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <div id="description">
+                    <div>
+                        <a href="../comprar.aspx" class="logo"></a><span>&copy; Copyright &copy; 2011. <a href="../comprar.aspx">
+                            Company name</a> All rights reserved</span>
+                    </div>
+                    <p>
+                        Projeto AAP, Primeiro Semestre de 2018, Loja Virtual, FATEC.</p>
+                </div>
+                <div class="navigation">
+                    <p style="margin-left: 40px">
+                        Início&nbsp;&nbsp;&nbsp; | Sobre&nbsp;&nbsp;&nbsp; | Comprar&nbsp;&nbsp;&nbsp; | 
+                        Fale Conosco&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                </div>
+            </div>           
+             <!-- /#footer -->
+        </div>       
+         <!-- /#page -->
+    </div>    
+    <!-- /#background -->
+    </form>
+</body>
+</html>
