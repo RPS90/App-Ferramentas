@@ -1,0 +1,220 @@
+====================================================================PROBLEMAS:========================================================
+-FormSobre...--------------------------------------------------------------------------------------qlq um
+-manual do software(fácil de fazer na mão, chato passar pra windowsForm)---------------------------cecilia
+-regras de negóciosBLL CECILIA -Em Andamento, ainda surgindo umas novas----------------------------cecilia
+-selecionar com botão direito na tabela (muito complicado)-----------------------------------------MUITO DIFICIL
+-arrumar TanIndex de todos os campos, chato, mas tem q fazer pra funcionar
+-Busca específica selecionando oq q quer q retorna, ainda n sei fazer
+-colocar busca da tela principal em todas
+-por uma barra de busca NA janela de cadastro, eliminar a 'consulta' de vez
+OK-Criar Comandos de Pesquisa por item
+OK-Enfiar TODOS os comandos em Try-Catch, pq da muito erro em outros pcs --------------------------Precisa de acompanhamento
+OK-impedir item faça algo se tiver 'inativo'
+OK-criar instalador (não sei fazer), Consegui montar um zipado
+OK-histórico
+OK-mostrar junções
+OK-relacionar as tabelas (PRINCIPAL COMANDO ATUALMENTE)
+OK-Mostrar todos os itens cadastrados ao iniciar (Função principal)
+-Testar TODOS os comandos, fazer todo teste do programa -------------------------------------------CECILIA
+
+requisitos de sistema
+-windows 7 ou superior
+-mysql 5.5 ou superior
+-netframe 4.0
+
+
+
+====================================================================TALVEZ, depois do projeto:========================================
+-Perguntar quais funcões mais os professores colocariam? (Cilene, almir, lobo, vasconcelos terno)
+-colocar o instalador do conectorMySql no programa?
+-rodar tabela por página? (da bosta com plugin de impressão...)
+-por foto nossa?
+-oq vai na tela de sobre?
+-mudar ícones q eu já fiz?
+-PASSAR nosso programa pra Visual Studio 2017?mais opções e DLL que facilitamm
+-se der tempo, montar joguinho na tela de Sobre?
+-Arrumar parte visual (BEEEM mais pra frente)
+-mudar nome do programa? atualmente é 'controle de patrimonio'
+-colocar uma imagem de fundo??
+-colocar sons no programa? gay
+-programar pra qnd passar o mouse em cima, mostrar a foto de usuário (dificil)
+-montar dicionario de dados
+
+====================================================================BUGS:=============================================================
+-por pra ordenar por nome na tabela principal, da PAU! -----------RESOLVIDO! coloquei no select "AS tabela" no groupconcat
+-SE não cadastrar os 3 usuario, computador e monitor, ele não retorna resultado, revolver -resolvido!
+-Problema: Left Join da Tabela principal Retorna Mesas INATIVAS - resolvido, inseri where tralala.estado = ATIVO, no select
+-backup em outro pc ta perdendo acento e letras especiais
+
+
+
+====================================================================REQUISITOS:=======================================================
+-montar um software que cadastre: mesas, usuarios, computadores e monitores
+-Relacione as tabelas
+-mesas devem ter os dados: (tudo da mesa)
+-usuarios devem ter os dados: (tudo de usuarios, nome, numero, blalbalbla)
+-computadores devem ter os dados: (tudo da computadores, numero tralalalala)
+-monitores devem ter os dados: (tudo da monitores)
+-deve-se ter um histórico das alteracões feitas no sistema
+-deve-se ter um meio de sáida de relatório, de preferencia impresso
+-deve haver um indicador que sinalize se o usuario ou patrimonio está Ativo Ou INATIVO
+
+====================================================================REQ Ñ FUNCIONAIS:=================================================
+-Netframe work 4.0
+-DLL de Backup
+-DLL de impressão
+-Forms de Cadastro, Busca
+-Sistema de Pesquisa
+-Criação de banco automatizada, não precisando uso de comandos SQL Manualmente (Workbench mySQL)
+-Configuração de Conexao do Banco
+-Teste de conexao
+-Escolha do nome do Banco, caso haja conflito com algum banco já criado
+-Seleçõ dos Campos a Serem impressos
+-Filtro do que pode ser impresso nos textbox
+-Classificar por Coluna por nome, função
+-Funções visuais
+-Funções de Bloqueio de inserção de dados, -------nome bunito né, eu q inventei-------
+
+
+
+
+====================================================================REGRAS DE NEGOCIO:================================================
+-uma mesa podem ter vários usuarios
+-uma mesa pode ter vários pcs
+-uma mesa pode ter vários monitores
+-um usuários pode estar em mais de uma mesa
+-um comptuador não pode estar em mais de uma mesa
+-um monitor não pode estar em mais de uma mesa
+-Qualquer item 'INATIVO' não deve ser mostrado nos resultaods, apenas na listagem completa
+-Qualquer item inativo deve ser desvinculado da tabela principal AUTOMATICAMENTE!
+
+
+
+
+
+
+
+
+
+
+====================================================================DICAS:============================================================
+//Não esquecer do ConvertToINT qnd for mexer com int de Cbox pra algum campo
+
+//Jogar Tabelas do banco num comb Box!
+BLLTabelas bll3 = new BLLTabelas(cx);
+comboBox1.DataSource = bll3.ListarTabelas();
+comboBox1.DisplayMember = "TABLE_NAME";
+comboBox1.ValueMember = "TABLE_NAME";
+
+-para atualizar o FORM pai quando fechar um FORM FILHO, coloca o método q vc quer chamar ao fechar o filho debaixo do f.SHOWDIALOG()
+
+//   System.Diagnostics.Process.Start("aqui é tipo um executar");  
+//ver se reference equals serve pra montar método para algum objeto
+
+string a = "hello, world";                // hello, world
+string b = @"hello, world";               // hello, world
+string c = "hello \t world";              // hello     world
+string d = @"hello \t world";             // hello \t world
+string e = "Joe said \"Hello\" to me";    // Joe said "Hello" to me
+string f = @"Joe said ""Hello"" to me";   // Joe said "Hello" to me
+string g = "\\\\server\\share\\file.txt"; // \\server\share\file.txt
+string h = @"\\server\share\file.txt";    // \\server\share\file.txt
+string i = "one\r\ntwo\r\nthree";
+string j = @"one
+two
+three";
+
+
+
+
+====================================================================INNER JOIN Desenvolvimento========================================
+SELECT * FROM mesa_computador
+INNER JOIN mesas ON mesas.codigo = mesa_computador.codigo_mesa
+INNER JOIN computadores ON computadores.codigo = mesa_computador.codigo_computador;
+
+SELECT * FROM mesa_monitor
+INNER JOIN mesas ON mesas.codigo = mesa_monitor.codigo_mesa
+INNER JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor;
+
+SELECT * FROM mesa_usuario
+INNER JOIN mesas ON mesas.codigo = mesa_usuario.codigo_mesa
+INNER JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario; 
+-- deu certo inner join
+-- union não deu certo, pq n são os mesmos campos
+-- ------------------------------------------------
+SELECT * FROM mesa_computador, mesa_monitor, mesa_usuario; -- funciona, retorna tudo das 3 tabelas
+-- ------------------------------------------------
+-- mexendo                                          
+SELECT  usuarios.nomeusuario, mesas.numeropatrimonio,computadores.numeropatrimonio,monitores.numeropatrimonio FROM mesas
+ inner JOIN mesa_computador ON mesa_computador.codigo_mesa = mesas.codigo
+ inner JOIN mesa_monitor ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario ON mesa_usuario.codigo_mesa = mesas.codigo
+ inner JOIN computadores mesa_usuario ON computadores.codigo = mesa_computador.codigo_computador
+ inner JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor
+inner JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario; 
+--
+
+-- mexendo                                          
+SELECT  usuarios.nomeusuario, mesas.numeropatrimonio,computadores.numeropatrimonio, monitores.numeropatrimonio FROM mesas
+inner JOIN mesa_computador ON mesa_computador.codigo_mesa = mesas.codigo
+inner JOIN mesa_monitor ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario ON mesa_usuario.codigo_mesa = mesas.codigo
+inner JOIN computadores ON computadores.codigo = mesa_computador.codigo_computador
+inner JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor
+inner JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario; 
+
+-- mexendo                       Não apaga pelo amor de deus                    
+SELECT  mesas.codigo, usuarios.nomeusuario, mesas.numeropatrimonio,computadores.numeropatrimonio, monitores.numeropatrimonio FROM mesas
+inner JOIN mesa_computador ON mesa_computador.codigo_mesa = mesas.codigo
+inner JOIN mesa_monitor ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario ON mesa_usuario.codigo_mesa = mesas.codigo
+inner JOIN computadores ON computadores.codigo = mesa_computador.codigo_computador
+inner JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor
+inner JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario; 
+
+-- ----------------------- OrderData On            
+SELECT  mesas.codigo, usuarios.nomeusuario, mesas.numeropatrimonio,computadores.numeropatrimonio, monitores.numeropatrimonio FROM mesas
+inner JOIN mesa_computador ON mesa_computador.codigo_mesa = mesas.codigo
+inner JOIN mesa_monitor ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario ON mesa_usuario.codigo_mesa = mesas.codigo
+inner JOIN computadores ON computadores.codigo = mesa_computador.codigo_computador
+inner JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor
+inner JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario group by usuarios.nomeusuario; 
+
+-- group by, tentativas
+SELECT  mesas.codigo, GROUP_CONCAT(usuarios.nomeusuario), mesas.numeropatrimonio,computadores.numeropatrimonio, monitores.numeropatrimonio
+ FROM mesas 
+inner JOIN mesa_computador ON mesa_computador.codigo_mesa = mesas.codigo
+inner JOIN mesa_monitor ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario ON mesa_usuario.codigo_mesa = mesas.codigo
+inner JOIN computadores ON computadores.codigo = mesa_computador.codigo_computador
+inner JOIN monitores ON monitores.codigo = mesa_monitor.codigo_monitor
+inner JOIN usuarios ON usuarios.codigo = mesa_usuario.codigo_usuario GROUP BY mesa_computador.codigo_mesa = mesas.codigo;
+--
+-- ======================PERFEITO
+--
+SELECT  mesas.numeropatrimonio, 
+group_concat(distinct usuarios.nomeusuario SEPARATOR 			', '),
+group_concat(distinct computadores.numeropatrimonio SEPARATOR 	', '), 
+group_concat(distinct monitores.numeropatrimonio SEPARATOR 		', ') 
+FROM mesas
+inner JOIN mesa_computador 	ON mesa_computador.codigo_mesa = mesas.codigo
+inner JOIN mesa_monitor 	ON mesa_monitor.codigo_mesa = mesas.codigo
+inner JOIN mesa_usuario 	ON mesa_usuario.codigo_mesa = mesas.codigo
+inner JOIN computadores 	ON computadores.codigo = mesa_computador.codigo_computador  
+inner JOIN monitores 		ON monitores.codigo = mesa_monitor.codigo_monitor  
+inner JOIN usuarios 		ON usuarios.codigo = mesa_usuario.codigo_usuario 
+group by mesas.codigo; 
+
+
+
+
+
+
+
+
+
+
+==================================================================================================================Imagens externas
+raposinha
+https://pt.pngtree.com/freepng/cartoon-image-wipe-the-table-and-wipe-the-pattern_3534567.html

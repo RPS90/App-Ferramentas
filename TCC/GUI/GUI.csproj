@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>206E519A6944CA06C0FA13641A9482BE6AA5F2CC</ManifestCertificateThumbprint>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Horo\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Chama.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E70C1D43-8E9E-4FA7-9066-5E170D05DF06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.9.12\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.4.5\Assemblies\v2.0\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackup.Designer.cs">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfigurar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfigurar.Designer.cs">
+      <DependentUpon>FormConfigurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCriarBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCriarBanco.Designer.cs">
+      <DependentUpon>FormCriarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSobre.Designer.cs">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaComputador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaComputador.Designer.cs">
+      <DependentUpon>frmAtribTrocaMesaComputador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaMonitor.Designer.cs">
+      <DependentUpon>frmAtribTrocaMesaMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtribTrocaMesaUsuario.Designer.cs">
+      <DependentUpon>frmAtribTrocaMesaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroComputador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroComputador.Designer.cs">
+      <DependentUpon>frmCadastroComputador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroInformacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroInformacoes.Designer.cs">
+      <DependentUpon>frmCadastroInformacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMesa.Designer.cs">
+      <DependentUpon>frmCadastroMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroMonitor.Designer.cs">
+      <DependentUpon>frmCadastroMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroUsuario.Designer.cs">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaComputador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaComputador.Designer.cs">
+      <DependentUpon>frmConsultaComputador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaHistorico.Designer.cs">
+      <DependentUpon>frmConsultaHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMesa.Designer.cs">
+      <DependentUpon>frmConsultaMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaMonitor.Designer.cs">
+      <DependentUpon>frmConsultaMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaUsuario.Designer.cs">
+      <DependentUpon>frmConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLimparMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLimparMesa.Designer.cs">
+      <DependentUpon>frmLimparMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModeloDeFormularioDeConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModeloDeFormularioDeConsulta.Designer.cs">
+      <DependentUpon>frmModeloDeFormularioDeConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModeloDeFormularioDeCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModeloDeFormularioDeCadastro.Designer.cs">
+      <DependentUpon>frmModeloDeFormularioDeCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="FormBackup.resx">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigurar.resx">
+      <DependentUpon>FormConfigurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCriarBanco.resx">
+      <DependentUpon>FormCriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSobre.resx">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtribTrocaMesaComputador.resx">
+      <DependentUpon>frmAtribTrocaMesaComputador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtribTrocaMesaMonitor.resx">
+      <DependentUpon>frmAtribTrocaMesaMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtribTrocaMesaUsuario.resx">
+      <DependentUpon>frmAtribTrocaMesaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroComputador.resx">
+      <DependentUpon>frmCadastroComputador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroInformacoes.resx">
+      <DependentUpon>frmCadastroInformacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMesa.resx">
+      <DependentUpon>frmCadastroMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroMonitor.resx">
+      <DependentUpon>frmCadastroMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroUsuario.resx">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaComputador.resx">
+      <DependentUpon>frmConsultaComputador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaHistorico.resx">
+      <DependentUpon>frmConsultaHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMesa.resx">
+      <DependentUpon>frmConsultaMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaMonitor.resx">
+      <DependentUpon>frmConsultaMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaUsuario.resx">
+      <DependentUpon>frmConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLimparMesa.resx">
+      <DependentUpon>frmLimparMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModeloDeFormularioDeConsulta.resx">
+      <DependentUpon>frmModeloDeFormularioDeConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModeloDeFormularioDeCadastro.resx">
+      <DependentUpon>frmModeloDeFormularioDeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Graphic User Interface.cd" />
+    <None Include="GUI_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7F456BE0-2AB5-4159-A8BE-98107AC9E729}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9BF405CE-8EDD-4554-977C-061A49065CC7}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImprimirDataGridView\ImprimirDataGridView.csproj">
+      <Project>{58251195-A02A-4790-A9B9-50B735A530B4}</Project>
+      <Name>ImprimirDataGridView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{eb205dc1-e24b-45f5-bc62-afc219705d28}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySqlBackup\MySqlBackup.csproj">
+      <Project>{0D0AF1E2-BE83-4C1A-87C2-B10E2F9A7BAD}</Project>
+      <Name>MySqlBackup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salvar1.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GustaU.png" />
+    <None Include="Resources\GustaP.png" />
+    <None Include="Resources\GustaMon.png" />
+    <None Include="Resources\GustaMes.png" />
+    <None Include="Resources\GustaH.png" />
+    <None Include="Resources\GustaC.png" />
+    <None Include="Resources\DarkU.png" />
+    <None Include="Resources\DarkPrint.png" />
+    <None Include="Resources\DarkMon.png" />
+    <None Include="Resources\DarkMes.png" />
+    <None Include="Resources\DarkH.png" />
+    <None Include="Resources\DarkC.png" />
+    <None Include="Resources\Server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chama.ico" />
+    <Content Include="Lista dos BO.txt" />
+    <None Include="Resources\GustaTB1.png" />
+    <None Include="Resources\DarkTB2.png" />
+    <None Include="Resources\Raposinha.jpg" />
+    <None Include="Resources\DarkTB1.png" />
+    <None Include="Resources\DarkTB.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

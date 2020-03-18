@@ -1,0 +1,34 @@
+25fev - Programa só Cadastra Mesa, pc, usuario e monitor
+26fev - Pré ideia do LOBO DE simplificar todas as tabelas, vamo tentar
+27fev - com esquema diminuido, só 3 tab de relacionamento, falta o INNER JOIN.rar
+27fev - Implementado IMPRESSÂO DE DATAGRID
+27fev - mudei o visual,Adicionei icones no menu principal
+28fev - agora cria banco de dados pelo programa, Útil demais
+28fev - antes de fazer merda
+28fev - Ultimo antes de por Backup
+02mar - Visita do Gustavo e Cecília, Desenvolvimento
+02mar - CHAAMAAAAA, Relacionamento das tabelas pronto
+03mar - Historico pronto
+03mar - Identei todo o código, vou deletar os 'usings'
+03mar - Limpei os usings, não deu merda
+03mar - organizei umas coisas, código inutil apagado, gambiarras removidas oq prestou ficou
+03mar - antes de mexer no 'Status' para 'Estado'
+03mar - BACKUP estava com um Erro, arrumado agora, Regra de negócios para todos os cadastros, ok
+03mar - erro com Group concat no gridview, resolvido
+03mar - Gustavo ajudou arrumar o problema da Tabela principal, nao estava retornando mesa sem pc
+04mar - Metade do problema (Ativo-Inativo) Resolvido
+04mar - MUITA perfumaria, resolvi ATIVO-INATIVO, regras de negócio para cadastrar e region nos botões
+05mar - Ultima versão, apenas identando código, criei métodos no FormPrincipal e estou destribuind
+05mar - Ativo e Inativo, funções totalmente feitas, tudo q é inativo, sai da tabela principal
+05mar - Telas de busca, arrumado tamanho 
+06mar - Organizacao, removendo códigos redundantes do projeto, jogando tudo em métodos, principalmente de pesquisas
+07mar - Pesquisa por Tabela Coluna implementada na Tela principal
+20mar - alteração do historico
+21mar - programação do historico, busca, filtro de busca
+27mar - Apresentação para professores, Lobo 
+03mar - Apresentação para professores, Almir 
+10mar - Apresentação para professores, Maikol (visual)
+17mar - Apresentação para professores, Vasconselos (Orientador)
+24mar - Apresentação para professores, Lobo 
+09mai - Reunião prefeitura
+10mai - Implantação supervisionada
