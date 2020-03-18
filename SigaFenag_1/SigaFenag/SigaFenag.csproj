@@ -1,0 +1,455 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25FB83A6-E159-439F-AAA4-6C3EBF000C9C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SigaFenag</RootNamespace>
+    <AssemblyName>SigaFenag</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.12\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\font\helvetica-46-light-italic-587ebdb0ea724.ttf" />
+    <Content Include="css\font\helvetica-47-light-condensed-587ebd7b5a6f6.ttf" />
+    <Content Include="css\font\helvetica-75-bold-outline-587ebe00b76ba.ttf" />
+    <Content Include="css\font\HelveticaBlkIt.ttf" />
+    <Content Include="css\font\HelveticaNeue-Black.otf" />
+    <Content Include="css\font\HelveticaNeue-BlackCond.otf" />
+    <Content Include="css\font\HelveticaNeue-BlackCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-BlackExt.otf" />
+    <Content Include="css\font\HelveticaNeue-BlackExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-BoldCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-BoldExt.otf" />
+    <Content Include="css\font\HelveticaNeue-BoldExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-Condensed.otf" />
+    <Content Include="css\font\HelveticaNeue-CondensedObl.otf" />
+    <Content Include="css\font\HelveticaNeue-ExtBlackCond.otf" />
+    <Content Include="css\font\HelveticaNeue-ExtBlackCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-Extended.otf" />
+    <Content Include="css\font\HelveticaNeue-ExtendedObl.otf" />
+    <Content Include="css\font\HelveticaNeue-Heavy.otf" />
+    <Content Include="css\font\HelveticaNeue-HeavyCond.otf" />
+    <Content Include="css\font\HelveticaNeue-HeavyCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-HeavyExt.otf" />
+    <Content Include="css\font\HelveticaNeue-HeavyExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-HeavyItalic.otf" />
+    <Content Include="css\font\HelveticaNeue-Light.otf" />
+    <Content Include="css\font\HelveticaNeue-LightCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-LightExt.otf" />
+    <Content Include="css\font\HelveticaNeue-LightExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-Medium.otf" />
+    <Content Include="css\font\HelveticaNeue-MediumCond.otf" />
+    <Content Include="css\font\HelveticaNeue-MediumCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-MediumExt.otf" />
+    <Content Include="css\font\HelveticaNeue-MediumExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-Roman.otf" />
+    <Content Include="css\font\HelveticaNeue-Thin.otf" />
+    <Content Include="css\font\HelveticaNeue-ThinCond.otf" />
+    <Content Include="css\font\HelveticaNeue-ThinCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-ThinExtObl.otf" />
+    <Content Include="css\font\HelveticaNeue-ThinItalic.otf" />
+    <Content Include="css\font\HelveticaNeue-UltraLigCond.otf" />
+    <Content Include="css\font\HelveticaNeue-UltraLigCondObl.otf" />
+    <Content Include="css\font\HelveticaNeue-UltraLigExt.otf" />
+    <Content Include="css\font\HelveticaNeueBold.ttf" />
+    <Content Include="css\font\HelveticaNeueBoldItalic.ttf" />
+    <Content Include="css\font\HelveticaNeueCondensedBlack.ttf" />
+    <Content Include="css\font\HelveticaNeueCondensedBold.ttf" />
+    <Content Include="css\font\HelveticaNeueItalic.ttf" />
+    <Content Include="css\font\HelveticaNeueLight.ttf" />
+    <Content Include="css\font\HelveticaNeueLightItalic.ttf" />
+    <Content Include="css\font\HelveticaNeueMedium.ttf" />
+    <Content Include="css\font\HelveticaNeueUltraLight.ttf" />
+    <Content Include="css\font\HelveticaNeueUltraLightItal.ttf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\estilo.css" />
+    <Content Include="Global.asax" />
+    <Content Include="img\fotoLoginIlustracao.jpg" />
+    <Content Include="img\fundoRodape.png" />
+    <Content Include="img\iconeFacebookRodape.png" />
+    <Content Include="img\iconeInstagramRodape.png" />
+    <Content Include="img\iconeTelefoneRodape.png" />
+    <Content Include="img\iconeYoutubeRodape.png" />
+    <Content Include="img\logotipo-fenag-topo.png" />
+    <Content Include="img\logotipoSIGA.png" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="index.aspx" />
+    <Content Include="js\jquery-1.5.2.min.js" />
+    <Content Include="js\jquery-ui.custom.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\jquery.maskedinput.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="alterarAgecef.aspx" />
+    <Content Include="alterarAgecefParte2.aspx" />
+    <Content Include="alterarAssociado.aspx" />
+    <Content Include="alterarAssociadoParte2.aspx" />
+    <Content Include="alterarAssociadoParte3.aspx" />
+    <Content Include="alterarStatusDePagemento.aspx" />
+    <Content Include="cadastroAgecef.aspx" />
+    <Content Include="cadastroAssociadoParte1.aspx" />
+    <Content Include="cadastroAssociadoParte2.aspx" />
+    <Content Include="cadastroPropostas.aspx" />
+    <Content Include="Historico.aspx" />
+    <Content Include="HistoricoSiga.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="menuPrincipal.aspx" />
+    <Content Include="muralDePropostas.aspx" />
+    <Content Include="PesquisarAgecef.aspx" />
+    <Content Include="pesquisarAssociados.aspx" />
+    <Content Include="recuperarSenha.aspx" />
+    <Content Include="relatorioAgecefs.aspx" />
+    <Content Include="relatorioAssociados.aspx" />
+    <Content Include="relatorioDePagamentos.aspx" />
+    <Content Include="relatorioDePropostas.aspx" />
+    <Content Include="rodape.htm" />
+    <Content Include="subMenuControlarPropostas.aspx" />
+    <Content Include="subMenuGerarRelatorios.aspx" />
+    <Content Include="subMenuGerenciarAgecefs.aspx" />
+    <Content Include="subMenuGerenciarAssociados.aspx" />
+    <Content Include="subMenuGerirPagamentos.aspx" />
+    <Content Include="TesteCadastrarUnidades.aspx" />
+    <Content Include="TesteCadastrarUsuarios.aspx" />
+    <Content Include="topo.htm" />
+    <Content Include="visualizarPagamentos.aspx" />
+    <Content Include="visualizarStatusPagamentos.aspx" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\jquery.handsontable.full.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\ui-bootstrap\jquery-ui.custom.css" />
+    <Content Include="Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarAgecef.aspx.cs">
+      <DependentUpon>alterarAgecef.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarAgecef.aspx.designer.cs">
+      <DependentUpon>alterarAgecef.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarAgecefParte2.aspx.cs">
+      <DependentUpon>alterarAgecefParte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarAgecefParte2.aspx.designer.cs">
+      <DependentUpon>alterarAgecefParte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarAssociado.aspx.cs">
+      <DependentUpon>alterarAssociado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarAssociado.aspx.designer.cs">
+      <DependentUpon>alterarAssociado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarAssociadoParte2.aspx.cs">
+      <DependentUpon>alterarAssociadoParte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarAssociadoParte2.aspx.designer.cs">
+      <DependentUpon>alterarAssociadoParte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarAssociadoParte3.aspx.cs">
+      <DependentUpon>alterarAssociadoParte3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarAssociadoParte3.aspx.designer.cs">
+      <DependentUpon>alterarAssociadoParte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alterarStatusDePagemento.aspx.cs">
+      <DependentUpon>alterarStatusDePagemento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alterarStatusDePagemento.aspx.designer.cs">
+      <DependentUpon>alterarStatusDePagemento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroAgecef.aspx.cs">
+      <DependentUpon>cadastroAgecef.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroAgecef.aspx.designer.cs">
+      <DependentUpon>cadastroAgecef.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroAssociadoParte1.aspx.cs">
+      <DependentUpon>cadastroAssociadoParte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroAssociadoParte1.aspx.designer.cs">
+      <DependentUpon>cadastroAssociadoParte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroAssociadoParte2.aspx.cs">
+      <DependentUpon>cadastroAssociadoParte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroAssociadoParte2.aspx.designer.cs">
+      <DependentUpon>cadastroAssociadoParte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPropostas.aspx.cs">
+      <DependentUpon>cadastroPropostas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroPropostas.aspx.designer.cs">
+      <DependentUpon>cadastroPropostas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historico.aspx.cs">
+      <DependentUpon>Historico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historico.aspx.designer.cs">
+      <DependentUpon>Historico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoricoSiga.aspx.cs">
+      <DependentUpon>HistoricoSiga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoricoSiga.aspx.designer.cs">
+      <DependentUpon>HistoricoSiga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuPrincipal.aspx.cs">
+      <DependentUpon>menuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuPrincipal.aspx.designer.cs">
+      <DependentUpon>menuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="muralDePropostas.aspx.cs">
+      <DependentUpon>muralDePropostas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="muralDePropostas.aspx.designer.cs">
+      <DependentUpon>muralDePropostas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisarAgecef.aspx.cs">
+      <DependentUpon>PesquisarAgecef.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PesquisarAgecef.aspx.designer.cs">
+      <DependentUpon>PesquisarAgecef.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pesquisarAssociados.aspx.cs">
+      <DependentUpon>pesquisarAssociados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pesquisarAssociados.aspx.designer.cs">
+      <DependentUpon>pesquisarAssociados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recuperarSenha.aspx.cs">
+      <DependentUpon>recuperarSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recuperarSenha.aspx.designer.cs">
+      <DependentUpon>recuperarSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioAgecefs.aspx.cs">
+      <DependentUpon>relatorioAgecefs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorioAgecefs.aspx.designer.cs">
+      <DependentUpon>relatorioAgecefs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioAssociados.aspx.cs">
+      <DependentUpon>relatorioAssociados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorioAssociados.aspx.designer.cs">
+      <DependentUpon>relatorioAssociados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioDePagamentos.aspx.cs">
+      <DependentUpon>relatorioDePagamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorioDePagamentos.aspx.designer.cs">
+      <DependentUpon>relatorioDePagamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioDePropostas.aspx.cs">
+      <DependentUpon>relatorioDePropostas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorioDePropostas.aspx.designer.cs">
+      <DependentUpon>relatorioDePropostas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subMenuControlarPropostas.aspx.cs">
+      <DependentUpon>subMenuControlarPropostas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subMenuControlarPropostas.aspx.designer.cs">
+      <DependentUpon>subMenuControlarPropostas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subMenuGerarRelatorios.aspx.cs">
+      <DependentUpon>subMenuGerarRelatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subMenuGerarRelatorios.aspx.designer.cs">
+      <DependentUpon>subMenuGerarRelatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subMenuGerenciarAgecefs.aspx.cs">
+      <DependentUpon>subMenuGerenciarAgecefs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subMenuGerenciarAgecefs.aspx.designer.cs">
+      <DependentUpon>subMenuGerenciarAgecefs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subMenuGerenciarAssociados.aspx.cs">
+      <DependentUpon>subMenuGerenciarAssociados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subMenuGerenciarAssociados.aspx.designer.cs">
+      <DependentUpon>subMenuGerenciarAssociados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subMenuGerirPagamentos.aspx.cs">
+      <DependentUpon>subMenuGerirPagamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subMenuGerirPagamentos.aspx.designer.cs">
+      <DependentUpon>subMenuGerirPagamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TesteCadastrarUnidades.aspx.cs">
+      <DependentUpon>TesteCadastrarUnidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteCadastrarUnidades.aspx.designer.cs">
+      <DependentUpon>TesteCadastrarUnidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TesteCadastrarUsuarios.aspx.cs">
+      <DependentUpon>TesteCadastrarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteCadastrarUsuarios.aspx.designer.cs">
+      <DependentUpon>TesteCadastrarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarPagamentos.aspx.cs">
+      <DependentUpon>visualizarPagamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarPagamentos.aspx.designer.cs">
+      <DependentUpon>visualizarPagamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visualizarStatusPagamentos.aspx.cs">
+      <DependentUpon>visualizarStatusPagamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visualizarStatusPagamentos.aspx.designer.cs">
+      <DependentUpon>visualizarStatusPagamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1116</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1116/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

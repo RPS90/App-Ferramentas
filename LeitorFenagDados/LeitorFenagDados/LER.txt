@@ -1,0 +1,156 @@
+﻿UNIDADE: 519-7383 - GE HABITACAO MACAPA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+SILMAR SOCORRO DE SOUZA CASTILLO                                                              070317-3           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        1           50,00
+
+UNIDADE: 132-4523 - AG. CAPITAO POCO, PA
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ANDRE CASCAES DA SILVA                                                                        071407-6           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        1           50,00
+
+UNIDADE: 202-4707 - AG. SAO LAZARO, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ANALECIA SILVA DE SOUSA                                                                       071005-5           50,00
+ANDERSON CLEYTON BARROS DE MIRANDA                                                            071417-1           50,00
+CLEONICE DE SOUZA PICANCO                                                                     027494-4           50,00
+ELIANA DA COSTA BRITO                                                                         083935-2           50,00
+HELEN SILVANE PEREIRA VALLES                                                                  133452-0           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        5          250,00
+
+UNIDADE: 202-2801 - PA JUSTICA FEDERAL MACAPA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+LANA ROBERTA DOS PASSOS CHUCRE                                                                113919-0           50,00
+REGINALDO DOS SANTOS NUNES                                                                    086465-7           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        2          100,00
+
+UNIDADE: 202-0658 - AG. MACAPA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+BARBARA KELLY LINS DE ALMEIDA                                                                 081015-3           50,00
+CELIO DA SILVA LOPES                                                                          055663-1           50,00
+DIMICHEL BRAGA PRADO                                                                          109482-0           50,00
+EDINELSON REILY NEGREIROS DE SOUZA                                                            071420-2           50,00
+EDSON AZEVEDO DOS ANJOS GOMES                                                                 029841-3           50,00
+ELISIANE SENA RUFFEIL                                                                         087533-6           50,00
+GISELLE DA GAMA AMERICO                                                                       094804-1           50,00
+JACILENE BALIEIRO PEREIRA                                                                     130477-1           50,00
+JOAO FELIX DA SILVA JUNIOR                                                                    106920-6           50,00
+RAFAEL AUGUSTO DE PAULA                                                                       124061-1           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                       10          500,00
+
+UNIDADE: 519-7881 - GE GOVERNO MACAPA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+GIOVANIA MAGALHAES DE QUEIROZ                                                                 071415-9           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        1           50,00
+
+UNIDADE: 202-4708 - AG. PACOVAL, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+MARIA CRISTINA LOPES CHAVES                                                                   129208-0           50,00
+SANDRO PEREIRA CORREA                                                                         072768-2           50,00
+VICTOR COSTA DE CARVALHO                                                                      137501-5            0,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        3          100,00
+
+UNIDADE: 202-2807 - AG. SAO JOSE, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ANA RENES DE SOUZA LOPES                                                                      070296-6           50,00
+EDUARDO BRITO COELHO                                                                          063139-6            0,00
+ELISENDA TORRES PALHETA                                                                       099758-8            0,00
+HELIELTON LIMA MILHOMEM                                                                       125179-6           50,00
+JOAO VICTOR DO ESPIRITO SANTO MELO                                                            085508-4           50,00
+JULIO CESAR PINHEIRO DE OLIVEIRA                                                              072161-0           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        6          200,00
+
+UNIDADE: 202-3574 - AG. LARANJAL DO JARI, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ALBANO WAGNER DE SOUZA ANAICE                                                                 139732-4           50,00
+DALTON DE SOUZA CASTELO                                                                       129194-0           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        2          100,00
+
+UNIDADE: 202-3101 - AG. BURITIZAL, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ALESSANDRO DA SILVA PICANCO BATISTA                                                           053847-8           50,00
+FABIO CHAVES DOS SANTOS                                                                       135670-4           50,00
+FRANCIS DOS SANTOS OLIVEIRA                                                                   077699-9           50,00
+JOANA NARA LUSTOSA COSTA DOS SANTOS                                                           112156-2           50,00
+LILIAN MATOS DE SOUSA                                                                         129192-7           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        5          250,00
+
+UNIDADE: 202-3222 - SR AMAPA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+BRUNA NASCIMENTO SOUSA                                                                        115099-0           50,00
+CARLOS EDSON EVANGELISTA BARROSO                                                              077496-0           50,00
+EDERSON CLAUDIO NEGRI                                                                         061507-8           50,00
+ELIZABETE DIAS DE MATOS FILHA                                                                 086435-0           50,00
+JOAO DENILSON DE ARAUJO DA SILVA                                                              070314-4           50,00
+JONATHAN TRINDADE DO NASCIMENTO                                                               080784-3           50,00
+MARILZE DANIELLE COELHO DE MELO                                                               081952-7           50,00
+OCLEMILSON NASCIMENTO MEDEIROS                                                                115915-1           50,00
+RENILDA RODRIGUES DO REGO SILVA                                                               070297-2           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        9          450,00
+
+UNIDADE: 202-3102 - AG. SANTA ANA, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+ALEXSANDRO FERREIRA CORTES                                                                    133099-8           50,00
+DRENISON ROMAO LOBATO                                                                         130480-2           50,00
+EDERLEI DA SILVA PALMERIM                                                                     124060-5           50,00
+HELTON LAGES PEREIRA                                                                          133462-5           50,00
+JOSE HAMILTON DIAS DE MATOS                                                                   084433-0           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        5          250,00
+
+UNIDADE: 202-4723 - AG. OIAPOQUE, AP
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+FABIO DOS SANTOS LIMA                                                                         117355-3           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        1           50,00
+
+UNIDADE: 132-1578 - AG. MUSEU EMILIO GOELDI, PA
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+OSMAR DE MELO ARAUJO                                                                          070995-1           50,00
+----------------------------------------------------------------------------------------------------------------------
+TOTAL UNIDADE                                                                                        1           50,00
+
+UNIDADE: 202-4001 - $unidade.nomeUnidade
+
+NOME DO EMPREGADO                                                                            MATRICULA    DESC LIQUIDO
+----------------------------------------------------------------------------------------------------------------------
+JULIO SEBASTIAO FERREIRA                                                                      085945-5           50,00
+----------------------------------------------------------------------------------------------------------------------

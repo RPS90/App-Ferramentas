@@ -1,0 +1,95 @@
+*{margin: 0;padding: 0;}
+@font-face{font-family: 'HelveticaNeue-Light';src: url('font/HelveticaNeue-Light.otf');src: local('HelveticaNeue-Light'), url('font/HelveticaNeue-Light.otf') format('truetype');}
+.topoPaginaLogin{width: 100%;height: auto;min-height: 170px;background-color: #ffffff;box-shadow: 0px 10px 10px #bbbbbb;}
+.logotipoTopoLogin{width: 30%; max-width: 330px; float: left; margin-left: 3%; padding-bottom: 0.3%;margin-top: 1%;cursor: pointer;}
+.logotipoTopoLogin:hover{transition: 180ms linear; transform: scale(0.9);}
+.clearfix{clear: both;}
+.containerPaginas{width: 100%;margin-top: 0%;height: auto;}
+.tituloPaginaLogin{letter-spacing: 3px;font-family: 'HelveticaNeue-Light';width: 100%;padding-bottom: 8px;padding-top: 8px;color: #ffffff;background-image: linear-gradient(to left, #4279be,#2c517e 90%);}
+.BoasVindasPaginaLogin{line-height: 30px;margin-top: 2%;text-align: center;font-size: 19px;color: #335f93;font-family: 'HelveticaNeue-Light';letter-spacing: 3px;}
+.formLogin{width: 45%;min-width: 400px;height: auto;min-height: 200px;padding: 8px; border-radius: 8px;background-color: #f5f3f4;box-shadow: 3px 5px 10px 5px #bbbbbb;margin-top: 3%;}
+.nomesCamposForms{margin-top: 3%;float: left;text-align: left;color: #335f93;font-family: 'HelveticaNeue-Light';font-weight: bold;font-size: 18px;}
+.nomesCamposFormsLaranja{margin-top: 3%;float: left;text-align: left;color: #f8992f;font-family: 'HelveticaNeue-Light';font-weight: bold;font-size: 18px;}
+.txtLogin{width: 90%;height: 29px;}
+.txtLoginPequeno{width: 47%;height: 29px;float: left;margin-left: 2%;}
+.btnAcessar{margin-top: 2%;width: 50%;color: #ffffff;background-color: #f8992f;padding: 7px;cursor: pointer; font-size: 17px;font-family: 'HelveticaNeue-Light';font-weight: bold;}
+.btnAcessar:hover{transition: 180ms linear;transform: scale(0.9);}
+.btnRecuperarSenha{margin-left: 5%;float: left;margin-top: 2%;width: 40%;color: #4f4f4f;background-color: #ffffff;padding: 7px;cursor: pointer; font-size: 17px;font-family: 'HelveticaNeue-Light';font-weight: bold;}
+.btnRecuperarSenha:hover{transition: 180ms linear;transform: scale(0.9);}
+.btnCadastro{margin-left: 5%;float: left;margin-top: 2%;width: 40%;color: #ffffff;background-color: #4279be;padding: 7px;cursor: pointer; font-size: 17px;font-family: 'HelveticaNeue-Light';font-weight: bold;}
+.btnCadastro:hover{transition: 180ms linear;transform: scale(0.9);}
+.containerUsuarioLogadoTopo{float: right;margin-right: 7%;margin-top: 1%;}
+.fotoUsuarioLogado{float: none;}
+.NomeUsuarioLogado{font-size: 18px;color: #335f93;font-family: 'HelveticaNeue-Light';}
+.btnDeslogar{padding: 4px;cursor: pointer;background-color: #ff0000;color: #ffffff;font-family: 'HelveticaNeue-Light';font-size: 13px;}
+.btnDeslogar:hover{transition: 180ms linear;transform: scale(0.9);}
+.BlocosFormsCadastro{width: 30%;float: left;margin-left: 1.5%;padding-top: 2.5%;}
+.containerFormsPrincipais{border-radius: 9px;width: 90%;min-height: 200px;height: auto;margin-top: 3%;background-color: #f5f3f4;box-shadow: 3px 5px 10px 5px #bbbbbb;}
+.TitulosPaginasCadastros{text-align: center;padding-top: 3%;padding-bottom: 4%;font-size: 21px;font-family: 'HelveticaNeue-Light'; color: #335f93;font-weight: bold;}
+.lblNomeTextBox{text-align: left;color: #335f93; font-size: 18px;font-family: 'HelveticaNeue-Light';float:left;margin-left: 3%;}
+.CamposForms{min-width: 190px; float: right;min-height: 25px;font-size: 18px;font-family: 'HelveticaNeue-Light';background-color: #f6f9fe;color:#5f5f5f;border-radius: 4px;}
+.btnCadastroInterno{margin-top: 2%;width: 30%;color: #ffffff;background-color: #4279be;padding: 7px;cursor: pointer; font-size: 17px;font-family: 'HelveticaNeue-Light';font-weight: bold;}
+.btnCadastroInterno:hover{transition: 180ms linear;transform: scale(0.9);}
+.lblInfoUsuarioNaTela{font-family: 'HelveticaNeue-Light';text-align: left;font-size: 18px;color: #335f93; line-height: 30px;}
+.TxtAmpliado{width: 80%;margin-top: 4%;min-height: 320px;border-radius: 4px;}
+::-webkit-input-placeholder  {padding-top:16%;color:#335f93;text-align: center;font-size: 22px;font-family: 'HelveticaNeue-Light';}
+.InformacaoTopoSugestao{text-align: left;color: #335f93;font-family: 'HelveticaNeue-Light';font-size: 15px;float: left;margin-left: 2%;margin-top: 2%;padding-bottom: 1%;}
+.DescricaoSugestao{width:80%;text-align: justify;color: #335f93;font-family: 'HelveticaNeue-Light';font-size: 17px;float: left;margin-left: 2%;margin-top: 1%;padding-bottom: 1%;}
+.blocosMuralDeSugestoes{width: 90%;background-color: #ffffff;height: auto;padding: 4px;border-radius: 5px;}
+.botoesMenusSIGA{border-radius: 10px;margin-top: 3%;width: 30%;float: left;margin-left: 2%;font-size: 20px;font-family: 'HelveticaNeue-Light';color: #ffffff;background-color: #4279be;text-align: center;padding: 5px;height: auto;min-height: 50px;padding-top: 3%;cursor: pointer;}
+.botoesMenusSIGA:hover{border-radius: 10px;transition: 180ms linear;transform: scale(0.9);background-color: #f8992f;font-weight: bold;}
+.containerRodape{width: 100%;margin-top: 2%;position: relative;z-index: 1;background-color: #d5d5d5;padding-top: 3%;padding-bottom: 3%;height: auto;min-height: 100px;}
+.blocosRodape{width: 31%;float: left;margin-left: 2%;height: auto;}
+.logotipoRodape{width: 80%;min-width: 150px;cursor: pointer;}
+.logotipoRodape:hover{transition: 180ms linear;transform: scale(0.9);}
+.iconeTelefoneRodape{min-width: 20px;max-width: 40px;float: left;padding-right: 2%;cursor: pointer;}
+.textoRodape{line-height: 36px;font-family: 'HelveticaNeue-Light';color: #3f3f3f;font-size: 18px;text-align: center;font-weight: bold;margin-top: 2%;}
+.botoesRodape{border-radius: 10px;margin-top: 6%;width: 50%;font-size: 17px;font-family: 'HelveticaNeue-Light';color: #ffffff;background-color: #fc9b0c;text-align: center;padding: 5px;height: auto;min-height: 26px;padding-top: 2%;cursor: pointer;}
+.botoesRodape:hover{background-color: #4b80c2;transition: 180ms linear;transform: scale(0.9);}
+.iconesRedesSociaisRodape{width: 20%;min-width: 30px;max-width: 60px;margin-top: 5%;cursor: pointer;float: left;margin-left: 14%;cursor: pointer;}
+.iconesRedesSociaisRodape:hover{transition: 180ms linear;transform: scale(0.9);}
+.containerFiltros{width: 70%;margin-top: 2%;padding-bottom: 2%;}
+.GridTables{min-width: 120px;width: 16%;height: 29px;padding: 5px;font-family: 'HelveticaNeue-Light'; font-size: 17px;background-color: #e8f0fe;color: #494948;text-align: center;}
+.tituloInternoGrids{font-size: 22px; color: #494948;font-weight: bold;font-family: 'HelveticaNeue-Light'; text-align: center;padding-bottom: 2%;}
+.containerGrids{width: 85%;overflow-y: hidden;overflow-x: scroll;}
+@media (max-width: 1230px )
+{
+	.lblNomeTextBox{text-align: left;color: #335f93; font-size: 14px;font-family: 'HelveticaNeue-Light';float:left;margin-left: 1%;}
+	.CamposForms{min-width: 120px; float: right;min-height: 25px;font-size: 18px;font-family: 'HelveticaNeue-Light';background-color: #f6f9fe;color:#5f5f5f;border-radius: 4px;}
+}
+@media (max-width: 1100px)
+{
+	.GridTables{width: 7%;height: 29px;padding: 5px;font-family: 'HelveticaNeue-Light'; font-size: 11px;background-color: #e8f0fe;color: #494948;text-align: center;}
+	.tituloInternoGrids{font-size: 16px; color: #494948;font-weight: bold;font-family: 'HelveticaNeue-Light'; text-align: center;padding-bottom: 2%;}
+	.logotipoRodape{width: 90%;min-width: 150px;cursor: pointer;}
+	.blocosRodape{width: 80%;float: none;margin-left: 0%;height: auto;margin-top: 4%;}
+	.textoRodape{line-height: 36px;font-family: 'HelveticaNeue-Light';color: #3f3f3f;font-size: 14px;text-align: center;font-weight: bold;margin-top: 2%;}
+	.botoesRodape{border-radius: 10px;margin-top: 6%;width: 50%;font-size: 13px;font-family: 'HelveticaNeue-Light';color: #ffffff;background-color: #fc9b0c;text-align: center;padding: 5px;height: auto;min-height: 26px;padding-top: 3%;cursor: pointer;}
+	.iconesRedesSociaisRodape{width: 20%;min-width: 30px;max-width: 60px;margin-top: 5%;cursor: pointer;float: left;margin-left: 11%;cursor: pointer;}
+	.botoesMenusSIGA{border-radius: 10px;margin-top: 3%;width: 80%;float: none;margin-left: 0%;font-size: 18px;font-family: 'HelveticaNeue-Light';color: #ffffff;background-color: #4279be;text-align: center;padding: 5px;height: auto;min-height: 50px;padding-top: 5%;cursor: pointer;}
+	.InformacaoTopoSugestao{text-align: left;color: #335f93;font-family: 'HelveticaNeue-Light';font-size: 13px;float: left;margin-left: 2%;margin-top: 2%;padding-bottom: 1%;}
+	.DescricaoSugestao{width:80%;text-align: justify;color: #335f93;font-family: 'HelveticaNeue-Light';font-size: 15px;float: left;margin-left: 2%;margin-top: 1%;padding-bottom: 1%;}
+	::-webkit-input-placeholder  {padding-top: 26%;color:#335f93;text-align: center;font-size: 15px;font-family: 'HelveticaNeue-Light';}
+	.clearfixMobile{clear: both;}
+	.BlocosFormsCadastro{width: 80%;float: none;margin-left: 0%;padding-top: 2.5%;padding-bottom: 4%;}
+	.lblNomeTextBox{text-align: left;color: #335f93; font-size: 18px;font-family: 'HelveticaNeue-Light';float:none;margin-left: 0%;}
+	.CamposForms{min-width: 190px; float: none;min-height: 25px;font-size: 18px;font-family: 'HelveticaNeue-Light';background-color: #f6f9fe;color:#5f5f5f;border-radius: 4px;}
+	.lblNomeTextBox{text-align: left;color: #335f93; font-size: 14px;font-family: 'HelveticaNeue-Light';float:left;margin-left: 3%;}
+	.CamposForms{width: 64%; float: right;margin-left: 0%;min-height: 20px;font-size: 14px;font-family: 'HelveticaNeue-Light';}
+	.TitulosPaginasCadastros{text-align: center;padding-top: 6%;padding-bottom: 4%;font-size: 15px;font-family: 'HelveticaNeue-Light'; color: #335f93;font-weight: bold;}
+	.containerUsuarioLogadoTopo{float: none;margin-right: 0%;margin-top: 3%;}
+	.logotipoTopoLogin{width: 30%; max-width: 330px; float: none; margin-left: 0%; padding-bottom: 0.4%;margin-top: 1%;cursor: pointer;}
+	.fotoUsuarioLogado{float: none;}
+	.NomeUsuarioLogado{font-size: 15px;color: #335f93;font-family: 'HelveticaNeue-Light';}
+	.btnDeslogarTopo{cursor: pointer;background-color: #ff0000;color: #ffffff;font-family: 'HelveticaNeue-Light';font-size: 13px;}
+	.btnAcessar{margin-top: 2%;width: 40%;color: #ffffff;background-color: #f8992f;padding: 7px;cursor: pointer; font-size: 14px;font-family: 'HelveticaNeue-Light';font-weight: bold;}
+	.topoPaginaLogin{width: 100%;height: auto;min-height: 110px;background-color: #ffffff;box-shadow: 0px 10px 10px #bbbbbb;}
+	.logotipoTopoLogin{width: 50%; max-width: 700px; float: none; margin-left: 0%; padding-bottom: 0.4%;margin-top: 3%;cursor: pointer;}
+	.logotipoTopoLogin:hover{transition: 180ms linear; transform: scale(0.9);}
+	.nomesCamposForms{float: left;text-align: left;padding-bottom: 1%; color: #4f4f4f;font-family: 'HelveticaNeue-Light';font-weight: bold;font-size: 13px;}
+	.nomesCamposFormsLaranja{margin-top: 3%;float: left;text-align: left;color: #f8992f;font-family: 'HelveticaNeue-Light';font-weight: bold;font-size: 13px;}
+	.containerLogin{width: 90%;margin-top: 3%;height: auto;}
+	.tituloPaginaLogin{font-size: 19px;margin-top:0%;letter-spacing: 3px;font-family: 'HelveticaNeue-Light';width: 100%;padding-bottom: 8px;padding-top: 8px;color: #ffffff;background-image: linear-gradient(to left, #4279be,#2c517e 90%);}
+	.BoasVindasPaginaLogin{font-weight: bold;line-height: 30px;margin-top: 2%;text-align: center;font-size: 12px;color: #363636;font-family: 'HelveticaNeue-Light';letter-spacing: 3px;}
+
+}
