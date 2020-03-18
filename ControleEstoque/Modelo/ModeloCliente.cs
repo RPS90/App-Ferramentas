@@ -22,8 +22,7 @@ namespace Modelo
             this.CliCidade = "";
             this.CliEstado = "";            
         }
-        public ModeloCliente(int cod, string nome, string cpfcnpj, string rsocial, string cep,
-            string endereco, string fone, string email, string endnumero, string cidade, string estado  )//construtor
+        public ModeloCliente(int cod, string nome, string cpfcnpj, string rsocial, string cep,            string endereco, string fone, string email, string endnumero, string cidade, string estado  )//construtor
         {
             this.CliCod = cod;
             this.CliNome = nome;

@@ -8,6 +8,9 @@ namespace Modelo
 {
     public class ModeloCategoria
     {
+        private int cat_cod;
+        private String cat_nome;
+
         public ModeloCategoria()//construtor
         {
             this.CatCod = 0;
@@ -18,14 +21,11 @@ namespace Modelo
             this.CatCod = catcod;
             this.CatNome = nome;
         }
-
-        private int cat_cod;
         public int CatCod
         {
             get { return this.cat_cod; }
             set { this.cat_cod = value; }
         }
-        private String cat_nome;
         public String CatNome
         {
             get { return this.cat_nome; }
